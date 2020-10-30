@@ -1,3 +1,5 @@
+' This script will find and show the Windows product key on a computer.
+' Useful when a clean installation of Windows is planned.
 Set WshShell = CreateObject("WScript.Shell")
 MsgBox ConvertToKey(WshShell.RegRead("HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DigitalProductId"))
 
